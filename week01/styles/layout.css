@@ -32,6 +32,9 @@ main {
     color: antiquewhite;
     padding: .5rem .5rem 50%;
 }
+h1 {
+    color:darkolivegreen;
+}
 aside {
     grid-column: 3/4;
     background-color: lightgrey;
