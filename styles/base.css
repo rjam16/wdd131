@@ -24,7 +24,7 @@ h1 {
     background-color: slategray;
     margin: 0 auto;
 }
-ol {
+.navlink {
     display: block;
     flex: 1 1 auto;
     text-decoration: none;
@@ -33,7 +33,7 @@ ol {
     padding: 1rem;
     font-size:1.5rem;
 }
-ol:hover {
+.navlink:hover {
     text-decoration: overline;
     text-size-adjust: 5%;
 }
