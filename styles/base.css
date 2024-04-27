@@ -24,7 +24,7 @@ h1 {
     background-color: slategray;
     margin: 0 auto;
 }
-a {
+ol {
     display: block;
     flex: 1 1 auto;
     text-decoration: none;
@@ -33,9 +33,12 @@ a {
     padding: 1rem;
     font-size:1.5rem;
 }
-a:hover {
+ol:hover {
     text-decoration: overline;
     text-size-adjust: 5%;
+}
+a {
+    color:black;
 }
 main {
     max-width: 1000px;
