@@ -33,7 +33,7 @@ h1 {
     padding: 1rem;
     font-size:1.5rem;
 }
-.navlink:hover {
+a:hover {
     text-decoration: overline;
     text-size-adjust: 5%;
 }
