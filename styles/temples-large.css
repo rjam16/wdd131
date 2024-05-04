@@ -1,0 +1,28 @@
+@media screen and (min-width: 600px) {
+    #menu {
+        display: none;
+    }
+    header {
+        flex: 100%;
+        width: 100%;
+        display: flex;
+    }
+    h1 {
+        flex: 1;
+    }
+    nav {
+        flex-direction: row;
+        text-align: right;
+        flex: 1;
+    }
+    a {
+        display: inline;
+        text-align: right;
+    }
+    .row {
+        display:grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        grid-gap:25px;
+        place-items: center;
+    }
+}
