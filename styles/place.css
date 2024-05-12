@@ -1,5 +1,6 @@
 :root {
-    --main-color: #869FDE;
+    --background-small: #869FDE;
+    --label-color: #953D60;
 }
 body {
     padding: 0;
@@ -7,7 +8,7 @@ body {
     height: 100%;
     font-family:"Sansita", sans-serif;
     box-sizing: border-box;
-    background-color: #869FDE;
+    background-color: var(--background-small);
 }
 header {
     background-color: #293380;

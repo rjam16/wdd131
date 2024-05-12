@@ -29,7 +29,7 @@
     h2 {
         position: relative;
         right: 20px;
-        background-color: #953D60;
+        background-color: var(--label-color);
         color: #DDBFE4;
         text-align: left;
     }
