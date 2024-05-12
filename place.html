@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="styles/place.css">
+    <link rel="stylesheet" href="styles/place-large.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sansita:ital,wght@0,400;0,700;0,800;0,900;1,400;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Rebekah James">
+    <meta name="description" content="WDD 131 Place Page South Korea">
+    <title>WDD 131 - South Korea - Rebekah James</title>
+    <script src="scripts/place.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>South Korea</h1>
+    </header>
+    <main>
+        <div class="hero">
+            <picture>
+                <source srcset="images/south-korea-large.webp" media="(min-width: 1000px)">
+                <source srcset="images/south-korea.webp" media="(min-width: 550px)">
+                <img src="images/initial-south-korea.webp" alt="South Korean City" width="419" height="270">
+            </picture>
+        </div>
+    </main>
+    <section class="data">
+        <h2>Data</h2>
+        <h3>Area: <p>100,410 sq km</p></h3>
+        <h3>Population: <p>51,747,663</p></h3>
+        <h3>Capital: <p>Seoul</p></h3>
+        <h3>Language: <p>Korean</p></h3>
+        <h3>Currency: <p>South Korean Won</p></h3>
+        <h3>Time Zone: <p>UTC+9</p></h3>
+        <h3>Calling Code: <p>+82</p></h3>
+        <h3>Internet TLD: <p>.kr</p></h3>
+    </section>
+    <section class="weather">
+        <h2>Weather <img class="icon" src="images/weather-icon.png" alt="clear sky icon"></h2>
+        <h3>Temperature: <p>12°C</p></h3>
+        <h3>Conditions: <p>Clear</p></h3>
+        <h3>Wind: <p>5 km/h</p></h3>
+        <h3>Wind Chill: <p><span id="windChill"></span></p></h3>
+    </section>
+    <footer>
+        <p>&copy; <span id="currentyear"></span> 🐼 Rebekah James 🐼 Nevada </p>
+        <p>Last Modified <span id="lastModified"></span></p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,36 @@
+@media screen and (min-width: 800px) {
+    h2.weather::after {
+        content: url('images/weather-icon.png'); 
+    }
+    .icon {
+        width: 45px;
+        height: 40px;
+        display: inline-block;
+    }
+    .weather, .data {
+        position: absolute;
+        bottom: 50px;
+        background-color: #DDBFE4;
+        background-color: rgba(221, 191, 228, 0.75);
+        border-radius: 10%;
+        margin: auto;
+        padding: 1rem;
+    }
+    .weather {
+        right: 45px;
+    }
+    .data {
+        left: 45px;
+    }
+    p, h3 {
+        padding: 2px;
+        margin: 2px;
+    }
+    h2 {
+        position: relative;
+        right: 20px;
+        background-color: #953D60;
+        color: #DDBFE4;
+        text-align: left;
+    }
+}
