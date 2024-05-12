@@ -1,6 +1,6 @@
 @media screen and (min-width: 800px) {
     h2.weather::after {
-        content: url('images/weather-icon.png'); 
+        content: url('images/weather-icon.svg'); 
     }
     .icon {
         width: 45px;
