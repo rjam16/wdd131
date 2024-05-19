@@ -1,0 +1,118 @@
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family:"Sansita", sans-serif;
+    background-color: #B5D6B2;
+}
+header, main, footer {
+    border: 5px;
+    padding: 1rem; 
+}
+header {
+    background-color: #5A464C;
+    color: #DBCBD8;
+}
+main {
+    width: 650px;
+}
+h1 {
+    text-align: left;
+    font-size: 1.5rem;
+    margin-left: 1rem;
+}
+h2 {
+    font-size: 1.2rem;
+    color: #17301C;
+    text-align: center;
+}
+#image-card-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+.card {
+    padding: .5rem;
+    transition: .4s ease-in;
+    justify-content: center;
+    align-items: center;
+    border-width: 15px;
+    border-color:#668367;
+    background-color: #8EAD8D;
+}
+.card:hover {
+    background: #587B7F;
+}
+.card-title {
+    color: #17301C;
+    margin-bottom: .5rem;
+    text-align: center;
+    vertical-align: center;
+}
+.card-data {
+    text-align: center;
+    vertical-align: center;
+}
+.card-data span {
+    color:#17301C;
+}
+.card-img {
+    justify-items: center;
+    align-content: center;
+    width: 250px;
+    height: auto;
+    padding: .5rem;
+    margin: .5rem;
+    box-shadow: 0 0 .4rem .4rem rgba(0, 0, 0, 0.2);
+    display: inline;
+}
+/* small view navigation */
+#menu {
+    font-size: 1.5rem;
+    border: 0;
+    background: none;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+}
+#menu::before {
+    content: "☰";
+    color: #DBCBD8;
+}
+#menu.open::before {
+    content: "✖";
+    color: #DBCBD8;
+}
+nav {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    color: #DBCBD8;
+    font-size: 1.2rem;
+}
+a {
+    display:none;
+    padding: 1rem;
+    text-align: center;
+    text-decoration: none;
+    color: #DBCBD8;
+}
+a:hover {
+    font-weight: 700;
+}
+
+/* when button is clicked */
+.open a {
+    display: block;
+}
+.active::before {
+    content: "✨";
+}
+footer {
+    background-color: #5A464C;
+    color: #DBCBD8;
+    text-align: center;
+    align-content: center;
+    justify-items: center;
+}

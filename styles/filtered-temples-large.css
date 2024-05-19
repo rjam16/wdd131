@@ -1,0 +1,29 @@
+@media screen and (min-width: 600px) {
+    #menu {
+        display: none;
+    }
+    header {
+        flex: 100%;
+        width: 100%;
+        display: flex;
+    }
+    h1 {
+        flex: 1;
+    }
+    nav {
+        flex-direction: row;
+        text-align: right;
+        flex: 1;
+    }
+    a {
+        display: inline;
+        text-align: right;
+    }
+    #image-card-container {
+        width: 50%;
+        margin: 3rem auto;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
+}
