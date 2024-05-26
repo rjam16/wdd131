@@ -1,0 +1,90 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family:"Sansita", sans-serif;
+}
+:root {
+    --headlines: #CFA5B4;
+    --background: #FAE3E3;
+    --accent: #F7D4BC;
+    --accent2: #885053;
+    --wording: #343330;
+}
+body {
+    max-width: 800px;
+    margin: 0 auto;
+}
+header {
+    background-color: var(--headlines);
+}
+h1 {
+    padding: 1rem;
+    color: var(--wording);
+    text-align: center;
+}
+form {
+    padding: 1rem;
+    margin: 1rem 0 1rem 0;
+    background-color: var(--background);
+}
+label {
+    display: block;
+    padding-top: 1rem;
+}
+div {
+    padding-top:1.5rem;
+}
+select, input[type="text"], input[type="date"], textarea {
+    display: block;
+    width: 100%;
+    max-width: 400px;
+    padding: .75rem;
+    margin-top: .2rem;
+}
+.rating {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+.rating p {
+    grid-column: 1/6;
+}
+.rating input {
+    display: block;
+    margin: 0 auto;
+    height: 1.5rem;
+    width: 1.5rem;
+}
+.rating label {
+    text-align: center;
+}
+.features label {
+    padding: .25rem;
+}
+.features input {
+    margin-right: 6px;
+    height: 1.5rem;
+    width: 1.5rem;
+    vertical-align: middle;
+}
+input[type=submit] {
+    display: block;
+    width: 100%;
+    margin-top: 1rem;
+    padding: .75rem;
+    background-color: var(--accent);
+    color: var(--wording);
+    font-weight: 700;
+    font-size: 1.1rem;
+}
+i {
+    color: var(--accent2);
+}
+footer {
+    background-color: var(--headlines);
+    color: var(--wording);
+    padding: 1rem;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 600;
+}

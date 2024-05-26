@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="styles/form.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sansita:ital,wght@0,400;0,700;0,800;0,900;1,400;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Rebekah James">
+    <meta name="description" content="WDD 131 Form Page">
+    <title>WDD 131 - Dynamic Web Fundamentals - Rebekah James</title>
+    <script src="scripts/form.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Product Review</h1>
+    </header>
+    <main>
+        <form action="review.html" method="get" id="form">
+            <label for="productname">Product Name *</label>
+            <select name="productName" id="productName" required>
+                <option value="" disabled selected>Select a Product...</option>
+            </select>
+            <div class="rating">
+                <p>Overall Rating *</p>
+                <label><input type="radio" name="rating" id="oneStar" required>&star;</label>
+                <label><input type="radio" name="rating" id="twoStars" required>&star;&star;</label>
+                <label><input type="radio" name="rating" id="threeStars" required>&star;&star;&star;</label>
+                <label><input type="radio" name="rating" id="fourStars" required>&star;&star;&star;&star;</label>
+                <label><input type="radio" name="rating" id="fiveStars" required>&star;&star;&star;&star;&star;</label>
+            </div>
+            <label for="date">Date of Installation *</label>
+            <input type="date" name="date" id="date" required>
+            <div class="features">
+                <p>Which features did you find useful in the product?</p>
+                <p><i>(Check all that apply)</i></p>
+                <label><input type="checkbox" name="durability" id="durability" value="durability">Durability</label>
+                <label><input type="checkbox" name="easeofUse" id="easeofUse" value="easeofUse">Ease of Use</label>
+                <label><input type="checkbox" name="performance" id="performance" value="performance">Performance</label>
+                <label><input type="checkbox" name="design" id="design" value="design">Design</label>
+            </div>
+            <label for="review">Written Review</label><i>(Optional)</i></label>
+            <textarea name="review" id="review"></textarea>
+            <label for="name">Your Name<i>(Optional)</i></label>
+            <input type="text" name="name" id="name">
+            <input type="submit" value="Post Review">
+        </form>
+    </main>
+    <footer>
+        <p>&copy; <span id="currentyear"></span> 🐼 Rebekah James 🐼 Nevada </p>
+        <p>Last Modified <span id="lastModified"></span></p>
+    </footer>
+</body>
+</html>
