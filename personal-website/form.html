@@ -14,6 +14,30 @@
         <script src="scripts/website-form.js" defer></script>
     </head>
 <body>
+    <header>
+        <h1>Brainstorming Time</h1>
+        <button id="menu"></button>
+        <nav class="navigation">
+            <a href="homepage.html" id="home">Home</a>
+            <a href="examples.html" id="examples">Examples</a>
+            <a href="form.html" id="youTry">Your Turn</a>
+        </nav>
+    </header>
+    <main>
+        <form action="idea.html" method="get" id="form">
+            <label for="interest">Point of Intrigue *</label>
+            <input type="text" name="interest" id="interest" required>
+            <label for="mediumname">Medium for Idea <i>(Optional)</i></label>
+            <select name="mediumName" id="mediumName">
+                <option value="" disabled selected>Select a Medium...</option>
+            </select>
+            <label for="other">If Other</label>
+            <input type="text" name="other" id="other">
+            <label for="questions">List of Questions *</label>
+            <textarea name="questions" id="questions" required></textarea>
+            <input type="submit" value="Create Idea">
+        </form>
+    </main>
     <footer>
         <p>&copy; <span id="currentyear"></span> 🐼 Rebekah James 🐼 Nevada </p>
         <p>Last Modified <span id="lastModified"></span></p>
